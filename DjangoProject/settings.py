@@ -25,8 +25,8 @@ sys.path.insert(0, str(BASE_DIR))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-ui2ht3v2*z0tq3w#k&@spw)!)24e6a$2f^v715(a2g7g-p+-7&'
-
-# SECURITY WARNING: don't run with debug turned on in production!
+h debug turned on in production!
+# SECURITY WARNING: don't run wit
 DEBUG = True
 
 ALLOWED_HOSTS = []

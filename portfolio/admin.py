@@ -1,7 +1,6 @@
 # portfolio/admin.py
 
 from django.contrib import admin
-from .models import Projeto  # Importa o nosso modelo
+from .models import Projeto
 
-# Garanta que esta linha existe e está correta
 admin.site.register(Projeto)
