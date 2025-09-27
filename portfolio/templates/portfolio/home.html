@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
+        .container { max-width: 800px; margin: auto; }
+        .projeto { background-color: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #0056b3; }
+        h2 { margin-top: 0; color: #333; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="sobre-mim" style="background-color: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h2>Sobre Mim</h2>
+    <p>
+        Olá! Meu nome é Kirlian. Sou um estudante/profissional apaixonado por tecnologia, com foco em Engenharia de Controle e Automação.
+        Tenho explorado áreas como Automação, Inteligência Artificial, Análise de Dados e desenvolvimento web.
+        Este portfólio é uma coleção dos projetos que desenvolvi para praticar e aprofundar meus conhecimentos.
+    </p>
+</div>
+    <div class="container">
+        <h1>Meu Portfólio Pessoal</h1>
+        <hr>
+
+        {% for projeto in projetos %}
+            <div class="projeto">
+                <h2>{{ projeto.titulo }}</h2>
+                <p><strong>Tecnologia:</strong> {{ projeto.tecnologia }}</p>
+                <p>{{ projeto.descricao }}</p>
+                {% if projeto.link %}
+                    <a href="{{ projeto.link }}" target="_blank">Ver Projeto &rarr;</a>
+                {% endif %}
+            </div>
+        {% empty %}
+            <p>Nenhum projeto cadastrado ainda.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

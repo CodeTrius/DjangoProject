@@ -1,0 +1,25 @@
+# Arquivos do Python e Cache
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Ambiente Virtual
+.venv/
+venv/
+env/
+
+# Banco de Dados
+*.sqlite3
+db.sqlite3
+
+# Arquivos de IDE (PyCharm, VSCode)
+.idea/
+.vscode/
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log e uploads (se houver)
+*.log
+media/
